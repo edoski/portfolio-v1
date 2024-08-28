@@ -141,6 +141,18 @@ nav a:active, .footer-logo-text:active {
         font-size: 0.8rem;
     }
 
+    .nav-icons {
+        font-size: 1.5rem;
+    }
+
+    nav h1 {
+        font-size: 1.5rem;
+    }
+
+    .vertical-line {
+        height: 30px;
+    }
+
     footer {
         font-size: 0.8rem;
     }
