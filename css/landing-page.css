@@ -43,6 +43,13 @@ html, body {
     background-color: var(--background-color);
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
 *, *::before, *::after {
     box-sizing: inherit;
 }
@@ -172,8 +179,20 @@ hr {
     margin: 0;
     padding: 0;
     border: none;
-    height: 2px;
+    height: 3px;
     background-image: radial-gradient(circle, hsla(17, 83%, 54%, 1) 0%, hsla(46, 100%, 97%, 1) 100%);
     background-size: 200% 100%;
     animation: moveGradient 2.5s linear infinite;
+}
+
+.footer-hr {
+    margin-top: auto;
+}
+
+footer {
+    background-color: var(--nav-background-color);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 1rem 0;
+    font-family: var(--oxygen-mono), sans-serif;
 }
