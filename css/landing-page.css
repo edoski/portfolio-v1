@@ -130,6 +130,11 @@ nav a:active, .footer-logo-text:active {
     color: var(--primary-color);
 }
 
+.nav-icons a:active, .footer-icons a:active {
+    color: var(--secondary-color);
+    transform: translateY(2px);
+}
+
 @media (max-width: 755px) {
     nav {
         flex-direction: column;
@@ -249,6 +254,10 @@ footer {
 
 .footer-logo-text:hover .fa-code {
     color: var(--primary-color);
+}
+
+.footer-logo-text:active .fa-code {
+    color: var(--secondary-color);
 }
 
 .footer-icons {
