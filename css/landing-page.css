@@ -5,7 +5,9 @@
     --secondary-color: #CCC5B9;
     --tertiary-color: #403D39;
     --background-color: #252422;
-    --accent-color: #EB5E28;
+    --nav-background-color: #181816;
+    --accent-color: #ff672b;
+    --accent-color-active: #D44D1A;
 }
 
 .oxygen-light {
@@ -37,6 +39,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
 }
 
 *, *::before, *::after {
@@ -45,7 +48,115 @@ html, body {
 
 nav {
     display: flex;
+    height: 130px;
     justify-content: space-between;
-    padding: 1rem;
-    font-family: var(--oxygen-mono), serif;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-family: var(--oxygen-mono), sans-serif;
+    background-color: var(--nav-background-color);
+}
+
+nav h1 {
+    font-family: var(--oxygen), sans-serif;
+}
+
+nav h1 > a span {
+    color: var(--accent-color);
+    font-family: var(--oxygen-mono), sans-serif;
+    font-weight: 400;
+    transition: color 100ms;
+}
+
+nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 100ms, text-shadow 100ms;
+    position: relative;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+nav h1 > a:hover span {
+    color: var(--primary-color);
+}
+
+nav a:active {
+    color: var(--accent-color-active);
+}
+
+.nav-links {
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    gap: 1rem;
+    align-items: center;
+}
+
+.vertical-separator {
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+.vertical-line {
+    width: 1px;
+    height: 40px;
+    background-color: var(--primary-color);
+    margin: 0 0.5rem;
+}
+.nav-icons {
+    display: flex;
+    gap: 1rem;
+    font-size: 2rem;
+}
+
+@media (max-width: 755px) {
+    nav {
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+}
+
+/* NAV ELEMENTS ANIMATION START */
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    border-radius: 5px;
+    background: radial-gradient(circle, hsla(17, 83%, 54%, 1) 0%, hsla(46, 100%, 97%, 1) 100%);
+    background-size: 200% 100%;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    animation: moveGradient 1s linear infinite;
+}
+
+@keyframes moveGradient {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: 0 200%;
+    }
+}
+
+/* NAV ELEMENTS LINE ANIMATION END */
+
+hr {
+    margin: 0;
+    padding: 0;
+    border: none;
+    height: 2px;
+    background-image: radial-gradient(circle, hsla(17, 83%, 54%, 1) 0%, hsla(46, 100%, 97%, 1) 100%);
+    background-size: 200% 100%;
+    animation: moveGradient 2.5s linear infinite;
 }

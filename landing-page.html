@@ -5,26 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen:wght@300;400;700&display=swap"
+          rel="stylesheet">
+    <script src="https://kit.fontawesome.com/73e16fff26.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/landing-page.css">
     <title>edo's portfolio</title>
 </head>
 <body>
     <nav>
         <div class="logo">
-            <h1>edo-portfolio-v1</h1>
+            <h1>
+                <a class="nav-link" href="landing-page.html">
+                    <span><i class="fa-solid fa-terminal"></i></span>
+                    edo-portfolio<span>-v1</span>
+                </a>
+            </h1>
         </div>
-        <ul class="nav-links">
-            <li><a href="about.php">About</a></li>
-            <li><a href="projects.php">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="https://www.linkedin.com/in/edoardo-galli-5074321b9/">
-                <img src="images/linkedin.png" alt="linkedin" class="linkedin">
-            </a></li>
-            <li><a href="https://github.com/edoski">
-                <img src="images/github.png" alt="github" class="github">
-            </a></li>
-        </ul>
+        <div class="nav-links">
+            <a class="nav-link" href="about.html">about</a>
+            <a class="nav-link" href="#projects">projects</a>
+            <a class="nav-link" href="#contact">contact</a>
+<!--            <p class="vertical-separator">|</p>-->
+            <div class="vertical-line"></div>
+            <div class="nav-icons">
+                <a class="linkedin-icon" href="https://www.linkedin.com/in/edoardo-galli-5074321b9/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a class="github-icon" href="https://github.com/edoski" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
     </nav>
+    <hr>
 </body>
 </html>
