@@ -3,9 +3,9 @@
     --oxygen-mono: 'Oxygen Mono', monospace;
     --primary-color: #FFFCF2;
     --secondary-color: #CCC5B9;
-    --tertiary-color: #403D39;
-    --background-color: #252422;
-    --nav-background-color: #181816;
+    --tertiary-color: #404040;
+    --background-color: #1f1f1f;
+    --nav-background-color: #1a1a1a;
     --accent-color: #ff672b;
     --accent-color-active: #D44D1A;
 }
@@ -34,11 +34,12 @@
     font-style: normal;
 }
 
+/* CSS RESET */
+
 html, body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
     background-color: var(--background-color);
 }
 
@@ -46,24 +47,29 @@ html, body {
     box-sizing: inherit;
 }
 
+/* END CSS RESET */
+
+.nav-container {
+    background-color: var(--nav-background-color);
+    width: 100%;
+}
+
 nav {
     display: flex;
-    height: 130px;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
     font-family: var(--oxygen-mono), sans-serif;
-    background-color: var(--nav-background-color);
 }
 
 nav h1 {
     font-family: var(--oxygen), sans-serif;
+    margin: 1rem 0;
 }
 
 nav h1 > a span {
     color: var(--accent-color);
     font-family: var(--oxygen-mono), sans-serif;
-    font-weight: 400;
     transition: color 100ms;
 }
 
@@ -91,20 +97,15 @@ nav a:active {
     display: flex;
     flex-flow: row wrap;
     list-style-type: none;
-    gap: 1rem;
+    gap: 1.2rem;
     align-items: center;
-}
-
-.vertical-separator {
-    color: var(--primary-color);
-    font-size: 2rem;
 }
 
 .vertical-line {
     width: 1px;
     height: 40px;
     background-color: var(--primary-color);
-    margin: 0 0.5rem;
+    margin: 0 5px;
 }
 .nav-icons {
     display: flex;
@@ -112,10 +113,26 @@ nav a:active {
     font-size: 2rem;
 }
 
+.nav-icons a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 200ms;
+}
+
+.nav-icons a:hover {
+    color: var(--primary-color);
+}
+
 @media (max-width: 755px) {
     nav {
         flex-direction: column;
-        margin: 1rem 0;
+    }
+}
+
+@media (min-width: 756px) {
+    nav {
+        max-width: 1600px;
+        margin: 0 auto;
     }
 }
 
