@@ -135,6 +135,10 @@ nav a:active {
         flex-direction: column;
         font-size: 0.8rem;
     }
+
+    footer {
+        font-size: 0.8rem;
+    }
 }
 
 @media (min-width: 756px) {
