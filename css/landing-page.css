@@ -156,6 +156,10 @@ nav a:active, .footer-logo-text:active {
     footer {
         font-size: 0.8rem;
     }
+
+    .footer-icons > a > i {
+        font-size: 2rem;
+    }
 }
 
 @media (min-width: 756px) {
