@@ -310,11 +310,35 @@ main {
 .projects-container {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+    color: var(--nav-background-color);
+    font-family: var(--oxygen), sans-serif;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
-    color: var(--primary-color);
-    font-family: var(--oxygen), sans-serif;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 3px rgba(250, 150, 100, 0.3);
+    background: var(--primary-color);
+    transition: transform 200ms, box-shadow 200ms;
+}
+
+.project:nth-of-type(even) {
+    align-self: flex-end;
+}
+
+.project:hover {
+    box-shadow: 0 0 10px 3px rgba(250, 150, 100, 0.5);
+    transform: scale(1.05);
 }
 
 .contact-container {
