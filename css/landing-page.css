@@ -289,8 +289,9 @@ main {
 }
 
 .hero-text-top {
+    font-family: var(--oxygen-mono), monospace;
     margin-bottom: -0.05rem;
-    background: linear-gradient(120deg, var(--primary-color), var(--accent-color) 10%);
+    background: linear-gradient(120deg, var(--primary-color), var(--accent-color) 7%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -478,6 +479,13 @@ footer {
 
     .hero-title {
         font-size: 3rem;
+    }
+
+    .hero-text-top {
+        font-size: 0.8rem;
+        background: linear-gradient(30deg, var(--primary-color), var(--accent-color) 20%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     .hero-text {
