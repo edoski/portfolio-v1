@@ -212,7 +212,6 @@ main {
     flex-direction: column;
     justify-content: center;
     color: var(--primary-color);
-    background-color: var(--background-color);
     font-family: var(--oxygen), sans-serif;
 }
 
@@ -220,10 +219,6 @@ main {
     margin-top: -1rem;
     padding: 2rem;
     background: linear-gradient(200deg, var(--accent-color), var(--background-color) 50%);
-    /*border-left: 2px solid var(--accent-color);*/
-    /*border-right: 2px solid var(--accent-color);*/
-    /*padding: 1rem;*/
-    /*border-radius: 40px 5px;*/
 }
 
 .hero-title-container {
