@@ -482,6 +482,9 @@ footer {
 
     .hero-text {
         font-size: 0.8rem;
+        background: linear-gradient(20deg, var(--primary-color), var(--accent-color) 90%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     .hero-subtitle {
