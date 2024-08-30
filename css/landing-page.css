@@ -1,4 +1,4 @@
-:root {
+:root.dark {
     --oxygen: 'Oxygen', sans-serif;
     --oxygen-mono: 'Oxygen Mono', monospace;
     --primary-color: #FFFCF2;
@@ -6,6 +6,18 @@
     --tertiary-color: #404040;
     --background-color: #1f1f1f;
     --nav-background-color: #1a1a1a;
+    --accent-color: #ff672b;
+    --accent-color-active: #D44D1A;
+}
+
+:root.light {
+    --oxygen: 'Oxygen', sans-serif;
+    --oxygen-mono: 'Oxygen Mono', monospace;
+    --primary-color: #1f1f1f;
+    --secondary-color: #404040;
+    --tertiary-color: #CCC5B9;
+    --background-color: #FFFCF2;
+    --nav-background-color: #FFFCF2;
     --accent-color: #ff672b;
     --accent-color-active: #D44D1A;
 }
@@ -219,6 +231,18 @@ main {
     margin-top: -1rem;
     padding: 2rem;
     background: linear-gradient(200deg, var(--accent-color), var(--background-color) 50%);
+}
+
+.fa-sun {
+    position: absolute;
+    right: 1rem;
+    font-size: 2rem;
+}
+
+.fa-moon {
+    position: absolute;
+    right: 1rem;
+    font-size: 2rem;
 }
 
 .hero-title-container {

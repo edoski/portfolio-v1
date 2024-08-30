@@ -37,3 +37,30 @@ function animateGradients() {
 }
 
 animateGradients();
+
+const sun = document.querySelector('.fa-sun');
+const moon = document.querySelector('.fa-moon');
+
+function setTheme() {
+    const root = document.documentElement;
+    const newTheme = root.className === 'dark' ? 'light' : 'dark';
+    root.className = newTheme;
+    if (newTheme === 'dark') {
+        moon.style.display = 'none';
+        sun.style.display = 'block';
+    } else {
+        moon.style.display = 'block';
+        sun.style.display = 'none';
+    }
+}
+
+sun.addEventListener('click', () => {
+    setTheme();
+});
+
+moon.addEventListener('click', () => {
+    setTheme();
+});
+
+// set initial theme to dark
+setTheme();
