@@ -493,6 +493,7 @@ footer {
 
     .hero-text-top {
         font-size: 0.8rem;
+        margin-bottom: -0.05rem;
         background: linear-gradient(30deg, var(--primary-color), var(--accent-color) 20%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
