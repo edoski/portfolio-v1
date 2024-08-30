@@ -38,6 +38,7 @@ function animateGradients() {
 
 animateGradients();
 
+const themeContainer = document.querySelector('.theme-container');
 const sun = document.querySelector('.fa-sun');
 const moon = document.querySelector('.fa-moon');
 
@@ -54,11 +55,7 @@ function setTheme() {
     }
 }
 
-sun.addEventListener('click', () => {
-    setTheme();
-});
-
-moon.addEventListener('click', () => {
+themeContainer.addEventListener('click', () => {
     setTheme();
 });
 
