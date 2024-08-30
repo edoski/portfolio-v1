@@ -238,7 +238,8 @@ main {
     transition: color 200ms, transform 200ms;
     align-self: center;
     font-size: 1.5rem;
-    margin-left: 1rem;
+    margin: 0 0.5rem 0.2rem 0;
+    /*margin-left: 1rem;*/
 }
 
 .vertical-line-theme {
