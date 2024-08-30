@@ -445,8 +445,17 @@ footer {
 }
 
 @media (max-width: 755px) {
-    .nav-container, .nav-hr {
+    .nav-container {
         position: static;
+    }
+
+    .nav-hr {
+        position: static;
+        height: 19px;
+        background-image: radial-gradient(circle, hsla(17, 83%, 54%, 1) 0%, hsla(46, 100%, 97%, 1) 100%);
+        background-size: 200% 100%;
+        animation: moveGradient 2.5s linear infinite;
+        z-index: 1000;
     }
 
     nav {

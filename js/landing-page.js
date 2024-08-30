@@ -19,10 +19,16 @@ function animateGradients() {
     if (stop2 > 53 || stop2 < 49) direction2 *= -1;
     if (stop1 > 53 || stop1 < 49) direction1 *= -1;
 
-    heroContainer.style.background = `
-        linear-gradient(${angle2 - 10}deg, var(--accent-color), var(--background-color) ${stop2 - 5}%)
-    `;
-	
+    if (window.innerWidth <= 755) {
+        heroContainer.style.background = `
+            linear-gradient(${angle2 + 10}deg, var(--accent-color), var(--background-color) ${stop2 - 5}%)
+        `;
+    } else {
+        heroContainer.style.background = `
+            linear-gradient(${angle2 - 10}deg, var(--accent-color), var(--background-color) ${stop2 - 5}%)
+        `;
+    }
+
     bottomShineContainer.style.background = `
         linear-gradient(${angle1 - 20}deg, var(--accent-color), var(--background-color) ${stop1 - 15}%)
     `;
