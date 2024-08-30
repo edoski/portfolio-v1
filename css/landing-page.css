@@ -234,17 +234,19 @@ main {
 }
 
 .theme-container {
-    background-color: var(--nav-background-color);
-    border-radius: 1rem;
-    width: 3rem;
-    height: 3rem;
-    position: absolute;
-    right: 1rem;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-size: 2rem;
+    color: var(--primary-color);
     transition: color 200ms, transform 200ms;
+    align-self: center;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.vertical-line-theme {
+    width: 1px;
+    height: 35px;
+    background-color: var(--tertiary-color);
+    align-self: center;
+    margin: 0 auto 0 0;
 }
 
 .theme-container:hover {
