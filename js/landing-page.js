@@ -55,6 +55,15 @@ function setTheme() {
     }
 }
 
+// const projects = document.querySelectorAll('.project');
+// const project = document.querySelector('.project');
+
+// document.addEventListener('mouseover', (e) => {
+//     if (e.target.classList.contains('project')) {
+//         project.style.background = 'var(--accent-color)';
+//     }
+// });
+
 themeContainer.addEventListener('click', () => {
     setTheme();
 });
