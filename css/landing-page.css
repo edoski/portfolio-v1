@@ -404,9 +404,9 @@ main {
     background-color: var(--background-color);
     box-shadow: 0 0 10px 3px rgba(250, 150, 100, 0.3);
     border: 2px solid transparent;
-    background-image: radial-gradient(circle, var(--nav-background-color), var(--tertiary-color));
+    background-image: radial-gradient(circle, var(--nav-background-color) 20%, var(--accent-color));
     background-size: 200% 100%;
-    animation: moveGradient 5s linear infinite;
+    animation: moveGradient 8s linear infinite;
 }
 
 .contact {
@@ -430,13 +430,14 @@ main {
 }
 
 .fa-envelope {
-    color: var(--accent-color);
+    color: var(--primary-color);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
     font-size: 3rem;
     transition: color 200ms;
 }
 
 .fa-envelope:hover {
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 .bottom-shine-container {
