@@ -51,7 +51,15 @@ main {
 }
 
 .bottom-shine-container {
-  background: linear-gradient(40deg, var(--accent-color), var(--background-color) 50%);
+  background: linear-gradient(40deg, var(--accent-color), var(--nav-background-color) 50%);
+  animation: moveGradient 8s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .bottom-shine-container {
+    background: linear-gradient(40deg, var(--accent-color), var(--nav-background-color) 20%);
+    animation: moveGradient 8s linear infinite;
+  }
 }
 
 .footer-hr {

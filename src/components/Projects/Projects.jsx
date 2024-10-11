@@ -46,7 +46,7 @@ function Projects() {
   ];
 
   return (
-      <>
+      <div className="projects-body">
         <hr className="nav-hr"/>
         <div className="hero-subtitle-container-flex">
           <div className="hero-subtitle-container">
@@ -69,7 +69,7 @@ function Projects() {
               </div>
           ))}
         </div>
-      </>
+      </div>
   );
 }
 
