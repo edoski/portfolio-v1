@@ -30,7 +30,7 @@ function Hero() {
             <p className="hero-text-top">hi, i&#39;m</p>
             <h1 className="hero-title">edo.</h1>
             <p className="hero-text">
-                an ambitious, 21-year-old, <span className="bold">software engineer</span>;<br/>
+                an <span className="bold">ambitious</span>, 21-year-old, <span className="bold">software engineer</span>;<br/>
                 currently studying <span className="bold">computer science</span> at the <span className="bold">university of bologna</span>.
             </p>
             <div className="about-me-container">
