@@ -9,20 +9,20 @@ function Projects() {
   const projectList = [
     {
       title: 'pub-sub',
-      description: "(SO course project, temp. private upon prof's request) a client-server, terminal-based, pub-sub application leveraging java's multithreading capabilities.",
+      description: "(OS course project, temp. private upon prof's request) a client-server, terminal-based, pub-sub application leveraging java's multithreading capabilities.",
       techStack: 'java, multithreading',
       link: '',
     },
     {
       title: 'web-chat',
       description: 'a web-based chat interface, where users can register themselves, and interact with other users either in a general chat, or individually.',
-      techStack: 'html, css, javascript',
+      techStack: 'javascript, css, html',
       link: 'https://github.com/edoski/web-chat/',
     },
     {
       title: 'fantasy-cards',
       description: 'a javafx application (university project), where users can save, load, and play a turn-based fantasy card game.',
-      techStack: 'java, javafx',
+      techStack: 'java, javafx, scenebuilder',
       link: 'https://github.com/edoski/scontroElementale',
     },
     {
@@ -40,7 +40,7 @@ function Projects() {
     {
       title: 'portfolio-v2',
       description: "the very website you're currently on; originally in vanilla js, now in react; everything you see here is freely available on my github.",
-      techStack: 'html, css, javascript',
+      techStack: 'javascript, css, html',
       link: 'https://github.com/edoski/portfolio-v1',
     },
   ];
